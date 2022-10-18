@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_hexa - print integers in hexadecimal numerals
+* print_hexa - prints integers in hexadecimal numerals
 * @a: Integer
 *
 * Return: length of hexa;
