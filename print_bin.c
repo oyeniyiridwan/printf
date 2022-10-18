@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_bin - print integers in binary
+* print_bin - prints integers in binary
 * @a: Integer
 *
 * Return: length of binary;
