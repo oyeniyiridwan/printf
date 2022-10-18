@@ -43,11 +43,6 @@ int _printf(const char *format, ...)
 	      break;
 	    case 's':
 	      string = va_arg(ap, char*);
-	      if (!string)
-		{
-		exit(98);
-		return (-1);
-		}
 	      len = handle_String(array,string);	      
 	      break;
       	    case 'i':
