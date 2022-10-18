@@ -7,3 +7,4 @@ int percent()
   _putchar('%');
   return (1);
 }
+
