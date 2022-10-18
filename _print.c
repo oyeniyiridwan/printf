@@ -43,6 +43,11 @@ int _printf(const char *format, ...)
 	      break;
 	    case 's':
 	      string = va_arg(ap, char*);
+	      if (!string)
+		{
+		exit(98);
+		return (-1);
+		}
 	      len = handle_String(array,string);	      
 	      break;
       	    case 'i':
@@ -98,6 +103,8 @@ int _printf(const char *format, ...)
 	  
 	i +=2;
 	}
+      else if (format[i] == '%' && format[i +1] =='\0')
+	return (-1);
       else
 	{
 	  _putchar(format[i]);

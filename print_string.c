@@ -10,9 +10,6 @@
 int print_string(char *str)
 {
   int a = 0;
-  if (str == NULL)
-    str = "(null)";
-
 while (str[a] != '\0')
 {
 _putchar(str[a]);
