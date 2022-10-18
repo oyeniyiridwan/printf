@@ -83,7 +83,7 @@ int handle_Integer(char *w, int d)
     a++;
     }
     }
-  return print_format_Integer(len, invisible, zero, sign, left, /*precision,*/ d);
+  return print_format_Integer(len, invisible, zero, sign, left, d);
 }
 
 
@@ -132,7 +132,5 @@ total = length - width_variable - sign - invisible;
 	  }
 	      
       }
-    /*    if (precision)
-      _putchar('p');*/
     return (length);
 }
